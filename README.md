@@ -6,7 +6,7 @@
 
 ---
 
-# cau-lion-front
+# 🦁cau-lion-front
 Front-End Repository for cau likelion website made with React.js
 
 ## Cau Likelion and Project Motivation
