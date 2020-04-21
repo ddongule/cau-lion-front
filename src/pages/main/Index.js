@@ -6,7 +6,7 @@ class Index extends React.Component {
     return (
       <div>
         <NavBar />
-        <h1>index입니다.</h1>
+        <h1>index 입니다.</h1>
       </div>
     );
   }
