@@ -1,0 +1,25 @@
+{
+  "plugins": ["react","prettier"],
+  "extends": ["plugin:react/recommended", "eslint:recommended", "plugin:prettier/recommended"],
+  "rules": {
+    "prettier/prettier": ["error"],
+    "react/jsx-filename-extension": 0
+  },
+  "env": {
+    "browser": true,
+    "jasmine": true,
+    "jest": true
+  },
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "detect"
+    }
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2019
+  }
+}
+
+
