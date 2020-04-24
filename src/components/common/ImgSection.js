@@ -1,10 +1,12 @@
 import React from "react";
+import temp from "../../assets/img/temp.png";
+import "../../assets/css/common/imageSection.scss";
 
 class ImgSection extends React.Component {
   render() {
     return (
-      <div>
-        <h1>ImgSection 입니다.</h1>
+      <div className="banner">
+        <img src={temp} />
       </div>
     );
   }
