@@ -1,3 +1,4 @@
+// reset css
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -19,13 +20,64 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	margin: 0;
+	padding: 0;
+	line-height: 1.5em;
+}
+form {
+	margin: 0;
+	padding: 0;
+}
+hr {
+	display: none;
+}
+p, div, th, td, select, input {
+	color: #000000;
+}
+a:link, a:visited {
+	color: #000000;
+	text-decoration: none;
+}
+a:active, a:hover {
+	color: #000;
+	text-decoration: none;
+}
+a img, 
+input.type-image {
+	border: 0 none;
+}
+input.type-text, 
+textarea {
+	border: 1px solid #ddd;
+	background: #fff;
+}
+input.type-text:hover, 
+input.type-text:focus, 
+textarea:hover, 
+textarea:focus, 
+select:hover, 
+select:active {
+	background-color: #ffd;
+}
+input, select, textarea {
+	vertical-align: middle;
+	font-size: 1em;
+	color: #333;
+}
+select {
+	font-size: 11px;
+	font-family: Dotum, "돋움", sans-serif;
+}
+span.button, 
+img.button, 
+a.button {
+	cursor: pointer;
+	vertical-align: middle;
 }
 ol, ul {
 	list-style: none;
