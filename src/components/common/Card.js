@@ -1,10 +1,12 @@
 import React from "react";
+import "../../assets/css/common/_card.scss";
 
 class Card extends React.Component {
   render() {
     return (
-      <div>
-        <h1>Card 입니다.</h1>
+      <div className="card">
+        <h1 className="card-title">{this.props.card.content}</h1>
+        <h1 classNmae="card-category">{this.props.card.category}</h1>
       </div>
     );
   }

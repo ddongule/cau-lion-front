@@ -2,6 +2,7 @@ import React from "react";
 import NavBar from "../../components/common/nav/Navbar";
 import ImgSection from "../../components/common/ImgSection";
 import RecruitSection from "../../components/about/RecruitSection";
+import IntroSection from "../../components/about/IntroSection";
 
 class Index extends React.Component {
   render() {
@@ -9,8 +10,8 @@ class Index extends React.Component {
       <div>
         <NavBar />
         <ImgSection />
+        <IntroSection />
         <RecruitSection />
-        <h1>index 입니다.</h1>
       </div>
     );
   }
