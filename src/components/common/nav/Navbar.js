@@ -1,7 +1,7 @@
 import React from "react";
 import NavItem from "./NavItem";
-import "../../../assets/css/common/base/Base.scss";
-import "../../../assets/css/common/nav/Navbar.scss";
+import "../../../assets/css/common/base/_base.scss";
+import "../../../assets/css/common/nav/_navbar.scss";
 import temp from "../../../assets/img/temp.png";
 
 class NavBar extends React.Component {
