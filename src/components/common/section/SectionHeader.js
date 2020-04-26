@@ -8,11 +8,9 @@ class SectionHeader extends React.Component {
     return (
       <div className="section-header">
         <SectionHeaderTitle title={this.props.title} />
-        <div>
-          {this.props.subtitles.map((subtitle, i) => {
-            return <SectionHeaderSubtitle subtitle={subtitle} key={i} />;
-          })}
-        </div>
+        {this.props.subtitles.map((subtitle, i) => {
+          return <SectionHeaderSubtitle subtitle={subtitle} key={i} />;
+        })}
       </div>
     );
   }

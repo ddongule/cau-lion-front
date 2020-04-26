@@ -6,7 +6,7 @@ class Card extends React.Component {
     return (
       <div className="card">
         <h1 className="card-title">{this.props.card.content}</h1>
-        <h1 classNmae="card-category">{this.props.card.category}</h1>
+        <h1 className="card-category">{this.props.card.category}</h1>
       </div>
     );
   }
