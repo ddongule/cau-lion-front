@@ -7,7 +7,7 @@ class IntroSection extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      title: "About CAULION",
+      title: "About CAU-LION",
       subtitles: ["중앙대학교 멋쟁이 사자처럼은 어떤 동아리인가요?"],
       cards: [
         {
