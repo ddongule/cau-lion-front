@@ -3,7 +3,7 @@
     height: 70px;
     max-width: 1040px;
     margin: 0 auto;
-    padding: 30px 0;
+    padding: 20px 0;
     
     // temporary border
     border-bottom: 1px solid black;
@@ -23,12 +23,11 @@
                 width: 125px;
                 max-width: 350px;
                 text-align: center;
-                font-size: 14px;
+                font-size: 16px;
                 float: right;
                 padding: 28px 0;
                 :hover {
                     color: #00A9CB;
-                    font-weight: 600;
                 }
             }
         }

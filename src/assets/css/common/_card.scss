@@ -1,12 +1,26 @@
 .card {
-    width: 300px;
-    height: 300px;
     border-radius: 50%;
-    background-color: papayawhip;
-    margin: 30px;
-}
+    border: 1px solid #e4e4e4;
+    margin: 30px 20px;
+    text-align: center;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 50%;
+    width: 240px;
+    min-width: 240px;
+    height: 240px;
+    transition: all .5s;
+    cursor: pointer;
 
-.card-title {
-    display: flex;
-    justify-content: center;
+    .card-title {
+        top: 45%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    .card-category {
+        top: 95%;
+        position: relative;
+    }
 }
