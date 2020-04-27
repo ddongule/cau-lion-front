@@ -1,6 +1,5 @@
 .footer {
     width: 100%;
-    height: 150px;
     padding-bottom: 30px;
     border-top: solid 0.1px;
 
@@ -18,8 +17,8 @@
     }
 
     .copyright {
-        display: flex;
-        justify-content: center;
+        display: block;
+        text-align: center;
     }
 }
 
