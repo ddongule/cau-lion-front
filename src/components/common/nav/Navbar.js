@@ -37,9 +37,13 @@ class NavBar extends React.Component {
             <img src={temp} />
           </a>
         </div>
-        {this.state.navItems.map((navItem, i) => {
-          return <NavItem navItem={navItem} key={i} />;
-        })}
+        <div className="main-nav-list">
+          <ul className="main-nav-box">
+            {this.state.navItems.map((navItem, i) => {
+              return <NavItem navItem={navItem} key={i} />;
+            })}
+          </ul>
+        </div>
       </div>
     );
   }
