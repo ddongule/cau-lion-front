@@ -2,7 +2,7 @@ import React from "react";
 import NavItem from "./NavItem";
 import "../../../assets/css/common/base/_base.scss";
 import "../../../assets/css/common/nav/_navbar.scss";
-import temp from "../../../assets/img/temp.png";
+import lion from "../../../assets/img/lion.png";
 
 class NavBar extends React.Component {
   constructor(props) {
@@ -34,7 +34,7 @@ class NavBar extends React.Component {
         <div className="main-nav-logo">
           {/* temporary logo */}
           <a href="#">
-            <img src={temp} />
+            <img src={lion} className="logo" />
           </a>
         </div>
         <div className="main-nav-list">
