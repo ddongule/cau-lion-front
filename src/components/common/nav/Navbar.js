@@ -1,7 +1,7 @@
 import React from "react";
 import NavItem from "./NavItem";
-import "../../../assets/css/common/base/_base.scss";
-import "../../../assets/css/common/nav/_navbar.scss";
+import "../../../assets/css/common/base/base.scss";
+import "../../../assets/css/common/nav/navbar.scss";
 import lion from "../../../assets/img/lion.png";
 import { Link } from "react-router-dom";
 
