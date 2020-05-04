@@ -40,6 +40,7 @@ hr {
 }
 p, div, th, td, select, input {
 	color: #000000;
+	outline: none !important;
 }
 a:link, a:visited {
 	color: #000000;
@@ -71,6 +72,18 @@ input, select, textarea {
 	font-size: 1em;
 	color: #333;
 }
+input {
+	display: block;
+	padding: 15px;
+	border-radius: 5px;
+	min-width: 350px;
+	font-size: .8em;
+	border: 1px solid #E2E6EA;
+}
+input::-ms-input-placeholder { color: #b6b6b6; }
+input::-webkit-input-placeholder { color: #b6b6b6; }
+input::-moz-placeholder { color:#b6b6b6; }
+
 select {
 	font-size: 11px;
 	font-family: Dotum, "돋움", sans-serif;
@@ -96,4 +109,3 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-

@@ -4,7 +4,7 @@
     max-width: 1040px;
     margin: 0 auto;
     // temporary border
-    border-bottom: 1px solid black;
+    border-bottom: .5px solid #e7e7e7;
     .main-nav-logo{
         width: 20%;
         max-width: 400px;
@@ -25,9 +25,9 @@
                 width: 125px;
                 max-width: 350px;
                 text-align: center;
-                font-size: 16px;
+                font-size: 14px;
                 float: right;
-                padding: 24px 0;
+                padding: 23px 0;
                 :hover {
                     color: #00A9CB;
                 }

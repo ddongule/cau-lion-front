@@ -1,7 +1,7 @@
 .footer {
     width: 100%;
     padding-bottom: 30px;
-    border-top: solid 0.1px;
+    border-top: .5px solid #e7e7e7;
 
     .footer-icons {
         display: flex;
@@ -11,14 +11,15 @@
 
         .footer-icon {
             margin: 15px;
-            width: 50px;
-            height: 50px;
+            width: 30px;
+            height: 30px;
         }
     }
 
     .copyright {
         display: block;
         text-align: center;
+        font-size: 14px;
     }
 }
 
