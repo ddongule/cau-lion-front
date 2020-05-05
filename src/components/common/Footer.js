@@ -32,6 +32,9 @@ class Footer extends React.Component {
             </a>
           ))}
         </div>
+        <div className="inquire">
+          <p>문의) bbeternal@likelion.org</p>
+        </div>
         <div className="copyright">
           <p>Copyright &copy; 2020 CAU-LION 8th Admin</p>
         </div>
