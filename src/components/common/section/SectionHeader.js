@@ -1,7 +1,7 @@
 import React from "react";
 import SectionHeaderTitle from "./SectionHeaderTitle";
 import SectionHeaderSubtitle from "./SectionHeaderSubtitle";
-import "../../../assets/css/common/section/_sectionheader.scss";
+import "../../../assets/css/common/section/section-header.scss";
 
 class SectionHeader extends React.Component {
   render() {

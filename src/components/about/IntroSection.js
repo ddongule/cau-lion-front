@@ -1,7 +1,7 @@
 import React from "react";
 import SectionHeader from "../common/section/SectionHeader";
 import Card from "../common/Card";
-import "../../assets/css/about/_introsection.scss";
+import "../../assets/css/about/intro-section.scss";
 
 class IntroSection extends React.Component {
   constructor(props) {
