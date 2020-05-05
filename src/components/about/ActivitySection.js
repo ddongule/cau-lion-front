@@ -38,7 +38,7 @@ class Activity extends React.Component {
             "전체 해커톤을 통해 전국 멋사인들과 아이디어 및 서비스를 공유합니다",
         },
         {
-          imgSrc: "엠티 사진",
+          imgSrc: "props_img/cau-membership-trainning.jpg",
           category: "중앙대 멋사 MT",
           content: "MT를 통해 동아리원들과의 즐거운 추억을 쌓습니다",
         },

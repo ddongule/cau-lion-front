@@ -5,7 +5,7 @@ class Card extends React.Component {
   render() {
     const imgStyle = {
       backgroundImage: `url(${this.props.card.imgSrc})`,
-      backgroundSize: "contain"
+      backgroundSize: "contain",
     };
 
     return (
