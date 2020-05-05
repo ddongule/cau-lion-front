@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 // import API from "../../api/index";
 import "../../assets/css/accounts/signup.scss";
+import API from "../../api/index";
 
 class SignUp extends React.Component {
   constructor(props) {
@@ -15,37 +16,42 @@ class SignUp extends React.Component {
       phone_number: "",
     };
   }
-  handleChange = e => {
+  handleChange = (e) => {
     this.setState({
-      [e.target.name] : e.target.value
+      [e.target.name]: e.target.value,
     });
   };
   handlePasswordInput(passwordInput) {
-    this.setState({password:passwordInput});
+    this.setState({ password: passwordInput });
   }
   handlePasswordConfirmInput(confirmPasswordInput) {
-    this.setState({ confirmPassword: confirmPasswordInput});
+    this.setState({ confirmPassword: confirmPasswordInput });
   }
   doesPasswordMatch() {
-    const {password, confirmPassword} = this.state;
-    return password===confirmPassword;
+    const { password, confirmPassword } = this.state;
+    return password === confirmPassword;
   }
   confirmPasswords() {
-    const {confirmPassword} = this.state;
+    const { confirmPassword } = this.state;
     if (confirmPassword) {
       return this.doesPasswordMatch() ? "is-valid" : "is-invalid";
     }
   }
   renderFeedbackMessage() {
-    const {confirmPassword} = this.state;
+    const { confirmPassword } = this.state;
     if (confirmPassword) {
       if (!this.doesPasswordMatch()) {
         return (
           <div className="invalid-feedback">패스워드가 일치하지 않습니다.</div>
-        )
+        );
       }
     }
   }
+  async signUp(userInfo) {
+    const response = await API().signUp(userInfo);
+    console.log(response);
+  }
+
   render() {
     return (
       <div className="accounts-container">
@@ -74,7 +80,7 @@ class SignUp extends React.Component {
               placeholder="비밀번호"
               required
               autoComplete="off"
-              onChange={e => this.handlePasswordInput(e.target.value)}
+              onChange={this.handleChange}
               value={this.state.password}
             />
           </div>
@@ -87,7 +93,7 @@ class SignUp extends React.Component {
               placeholder="비밀번호 확인"
               required
               autoComplete="off"
-              onChange={e => this.handlePasswordConfirmInput(e.target.value)}
+              onChange={this.handleChange}
               value={this.state.password_confirmation}
             />
             {this.renderFeedbackMessage()}
@@ -131,7 +137,10 @@ class SignUp extends React.Component {
               value={this.state.phone_number}
             />
           </div>
-          <button onClick={this.signUp} className="accounts-btn">
+          <button
+            onClick={() => this.signUp(this.state)}
+            className="accounts-btn"
+          >
             회원가입
           </button>
           <div className="signup-have-accounts">
