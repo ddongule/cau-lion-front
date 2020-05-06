@@ -240,7 +240,7 @@ class SignUp extends React.Component {
               type="text"
               name="department"
               className={`accounts-input ${this.inputClassNameHelper(this.isEnteredDepartmentValid())}`}
-              placeholder="XXXX학과"
+              placeholder="중앙멋사학과"
               required
               autoComplete="off"
               onChange={e => this.validateDepartment(e.target.value)}

@@ -40,11 +40,24 @@ class Login extends React.Component {
               required
             />
           </div>
-          <input type="radio" required />
-          <label>Remember me?</label>
-          <Link to="#" className="accounts-password-reset">
-            비밀번호를 잊으셨나요?
-          </Link>
+          <div className="accounts-remember-pw">
+            <input type="checkbox" id="remember" />
+            <label htmlFor="remember">
+              <span className="remember-outside">
+                <span className="remember-inside"></span>
+              </span>
+              Remember me?
+            </label>
+            <Link to="#" className="accounts-password-reset">
+              비밀번호를 잊으셨나요?
+            </Link>
+          </div>
+          <button
+            onClick={() => this.login(this.state)}
+            className="accounts-btn"
+          >
+            로그인
+          </button>
           <div className="signup-have-no-accounts">
             <p>계정이 없으신가요?</p>
             <Link to="/signup" className="signup-or-login">
