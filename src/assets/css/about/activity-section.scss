@@ -18,16 +18,30 @@
     .card {
         border-radius: 6%;
         border: 1px solid #e4e4e4;
-        margin-bottom: 100px;
+        margin-bottom: 70px;
         flex-basis: 7.5em;
+        text-align: center;
+        text-align: center;
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 50%;
+        width: 240px;
+        min-width: 240px;
+        height: 240px;
+        transition: all .5s;
+        cursor: pointer;
+
+        .card-category {
+            top: 103%;
+            font-size: 15px;
+        }
+        .card-content {
+            top: 103%;
+            color: #a09a9a;
+            font-size: 13px;
+        }
     }
 
-    .card-content {
-        top: 112%;
-        color: #a09a9a;
-    }
-    .card-category {
-        top: 82%;
-        font-size: 18px;
-    }
+ 
 }
