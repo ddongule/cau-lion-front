@@ -10,8 +10,8 @@ class Card extends React.Component {
 
     return (
       <div className="card" style={imgStyle}>
-        <h1 className="card-content">{this.props.card.content}</h1>
         <h1 className="card-category">{this.props.card.category}</h1>
+        <h1 className="card-content">{this.props.card.content}</h1>
       </div>
     );
   }
