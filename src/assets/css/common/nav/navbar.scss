@@ -1,37 +1,37 @@
 .main-nav {
-    display: flex;
-    height: 70px;
-    max-width: 1040px;
-    margin: 0 auto;
-    // temporary border
-    border-bottom: .5px solid #e7e7e7;
-    .main-nav-logo{
-        width: 20%;
-        max-width: 400px;
+  display: flex;
+  height: 70px;
+  max-width: 1040px;
+  margin: 0 auto;
+  // temporary border
+  border-bottom: 0.5px solid #e7e7e7;
+  .main-nav-logo {
+    width: 20%;
+    max-width: 400px;
+    text-align: center;
+    padding: 10px 0;
+    .logo {
+      width: 50px;
+      margin: 3px;
+    }
+  }
+  .main-nav-list {
+    width: 80%;
+    max-width: 1200px;
+    .main-nav-box {
+      display: flex;
+      float: right;
+      .main-nav-item {
+        width: 125px;
+        max-width: 350px;
         text-align: center;
-        padding: 10px 0;
-        .logo {
-            width: 50px;
-            margin: 3px;
+        font-size: 14px;
+        float: right;
+        padding: 23px 0;
+        :hover {
+          color: #00a9cb;
         }
+      }
     }
-    .main-nav-list{
-        width: 80%;
-        max-width: 1200px;
-        .main-nav-box{
-            display: flex;      
-            float: right;     
-            .main-nav-item{
-                width: 125px;
-                max-width: 350px;
-                text-align: center;
-                font-size: 14px;
-                float: right;
-                padding: 23px 0;
-                :hover {
-                    color: #00A9CB;
-                }
-            }
-        }
-    }
+  }
 }

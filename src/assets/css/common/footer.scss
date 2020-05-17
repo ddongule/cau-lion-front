@@ -1,25 +1,24 @@
 .footer {
-    width: 100%;
-    padding-bottom: 30px;
-    border-top: .5px solid #e7e7e7;
+  width: 100%;
+  padding-bottom: 30px;
+  border-top: 0.5px solid #e7e7e7;
 
-    .footer-icons {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 50px;
+  .footer-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
 
-        .footer-icon {
-            margin: 15px;
-            width: 30px;
-            height: 30px;
-        }
+    .footer-icon {
+      margin: 15px;
+      width: 30px;
+      height: 30px;
     }
+  }
 
-    .copyright {
-        display: block;
-        text-align: center;
-        font-size: 14px;
-    }
+  .copyright {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+  }
 }
-
