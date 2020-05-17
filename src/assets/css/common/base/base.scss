@@ -1,5 +1,5 @@
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
-// reset css
+
 html,
 body,
 div,
@@ -105,18 +105,22 @@ nav,
 section {
   display: block;
 }
+
 body {
   margin: 0;
   padding: 0;
   line-height: 1.5em;
 }
+
 form {
   margin: 0;
   padding: 0;
 }
+
 hr {
   display: none;
 }
+
 p,
 div,
 th,
@@ -126,25 +130,30 @@ input {
   color: #000000;
   outline: none !important;
 }
+
 a:link,
 a:visited {
   color: #000000;
   text-decoration: none;
 }
+
 a:active,
 a:hover {
   color: #000;
   text-decoration: none;
 }
+
 a img,
 input.type-image {
   border: 0 none;
 }
+
 input.type-text,
 textarea {
   border: 1px solid #ddd;
   background: #fff;
 }
+
 input.type-text:hover,
 input.type-text:focus,
 textarea:hover,
@@ -153,6 +162,7 @@ select:hover,
 select:active {
   background-color: #ffd;
 }
+
 input,
 select,
 textarea {
@@ -160,6 +170,7 @@ textarea {
   font-size: 1em;
   color: #333;
 }
+
 input {
   display: block;
   padding: 15px;
@@ -168,12 +179,15 @@ input {
   font-size: 0.8em;
   border: 1px solid #e2e6ea;
 }
+
 input::-ms-input-placeholder {
   color: #b6b6b6;
 }
+
 input::-webkit-input-placeholder {
   color: #b6b6b6;
 }
+
 input::-moz-placeholder {
   color: #b6b6b6;
 }
@@ -182,20 +196,24 @@ select {
   font-size: 11px;
   font-family: Dotum, "돋움", sans-serif;
 }
+
 span.button,
 img.button,
 a.button {
   cursor: pointer;
   vertical-align: middle;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 blockquote,
 q {
   quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -203,6 +221,7 @@ q:after {
   content: "";
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
