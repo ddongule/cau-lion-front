@@ -238,13 +238,13 @@ class SignUp extends React.Component {
             <input
               type="password"
               minLength="6"
-              name="password_confirmation"
+              name="confirmPassword"
               className={`accounts-input ${this.confirmPasswordClassName()}`}
               placeholder="비밀번호 확인"
               required
               autoComplete="off"
               onChange={(e) => this.handlePasswordConfirmInput(e.target.value)}
-              value={this.state.password_confirmation}
+              value={this.state.confirmPassword}
             />
             {this.renderFeedbackMessage()}
           </div>
