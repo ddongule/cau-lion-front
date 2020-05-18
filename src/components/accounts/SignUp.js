@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../../assets/css/accounts/signup.scss";
 import API from "../../api/index";
+import "../../assets/css/accounts/signup.scss";
 
 class SignUp extends React.Component {
   constructor(props) {
@@ -167,11 +167,15 @@ class SignUp extends React.Component {
       return;
     }
 
-    let phoneNumberBuffer = localStorage.getItem("phoneNumber");
-
-    if (phoneNumberInput.length > phoneNumberBuffer.length) {
-      if (phoneNumberInput.length === 3 || phoneNumberInput.length === 8) {
-        phoneNumberInput += "-";
+    if (
+      localStorage.getItem("phoneNumber") != null &&
+      typeof localStorage.getItem("phoneNumber") != undefined
+    ) {
+      let phoneNumberBuffer = localStorage.getItem("phoneNumber");
+      if (phoneNumberInput.length > phoneNumberBuffer.length) {
+        if (phoneNumberInput.length === 3 || phoneNumberInput.length === 8) {
+          phoneNumberInput += "-";
+        }
       }
     }
 
