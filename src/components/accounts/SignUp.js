@@ -163,6 +163,20 @@ class SignUp extends React.Component {
   validatePhoneNumber = (phoneNumberInput) => {
     const phoneNumberRegExp = /^\d{3}-\d{3,4}-\d{4}$/;
 
+    if (phoneNumberInput.length > 13) {
+      return;
+    }
+
+    let phoneNumberBuffer = localStorage.getItem("phoneNumber");
+
+    if (phoneNumberInput.length > phoneNumberBuffer.length) {
+      if (phoneNumberInput.length === 3 || phoneNumberInput.length === 8) {
+        phoneNumberInput += "-";
+      }
+    }
+
+    localStorage.setItem("phoneNumber", phoneNumberInput);
+
     if (phoneNumberInput.match(phoneNumberRegExp)) {
       this.setState({
         isPhoneNumberValid: true,
