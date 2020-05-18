@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import API from "../../api/index";
 import "../../assets/css/accounts/signup.scss";
 import API from "../../api/index";
 
@@ -20,21 +19,30 @@ class SignUp extends React.Component {
       isPhoneNumberValid: false,
     };
   }
-  inputClassNameHelper = boolean => {
+
+  inputClassNameHelper = (boolean) => {
     switch (boolean) {
       case true:
-        return 'is-valid';
+        return "is-valid";
       case false:
-        return 'is-invalid';
+        return "is-invalid";
       default:
-        return '';
+        return "";
     }
   };
 
   isEveryFieldValid = () => {
-    const { isEmailValid, isNameValid, isDepartmentValid, isPhoneNumberValid } = this.state;
-    return isEmailValid && isNameValid && isDepartmentValid && isPhoneNumberValid;
-  }
+    const {
+      isEmailValid,
+      isNameValid,
+      isDepartmentValid,
+      isPhoneNumberValid,
+    } = this.state;
+    return (
+      isEmailValid && isNameValid && isDepartmentValid && isPhoneNumberValid
+    );
+  };
+
   renderSubmitBtn = () => {
     if (this.isEveryFieldValid()) {
       return (
@@ -44,9 +52,9 @@ class SignUp extends React.Component {
         >
           회원가입
         </button>
-      )
-    } 
-  
+      );
+    }
+
     return (
       <button
         onClick={() => this.signUp(this.state)}
@@ -55,30 +63,35 @@ class SignUp extends React.Component {
       >
         회원가입
       </button>
-    )
-  }
+    );
+  };
 
   handleChange = (e) => {
     this.setState({
       [e.target.name]: e.target.value,
     });
   };
+
   handlePasswordInput(passwordInput) {
     this.setState({ password: passwordInput });
   }
+
   handlePasswordConfirmInput(confirmPasswordInput) {
     this.setState({ confirmPassword: confirmPasswordInput });
   }
+
   doesPasswordMatch() {
     const { password, confirmPassword } = this.state;
     return password === confirmPassword;
   }
+
   confirmPasswordClassName() {
     const { confirmPassword } = this.state;
     if (confirmPassword) {
       return this.doesPasswordMatch() ? "is-valid" : "is-invalid";
     }
   }
+
   renderFeedbackMessage() {
     const { confirmPassword } = this.state;
     if (confirmPassword) {
@@ -89,16 +102,17 @@ class SignUp extends React.Component {
       }
     }
   }
-  validateName = name => {
+
+  validateName = (name) => {
     if (name.length > 1) {
       this.setState({
         isNameValid: true,
-        name
+        name,
       });
     } else {
       this.setState({
         isNameValid: false,
-        name
+        name,
       });
     }
   };
@@ -108,17 +122,17 @@ class SignUp extends React.Component {
     if (name) return isNameValid;
   };
 
-  validateDepartment = department => {
+  validateDepartment = (department) => {
     const departmentRegExp = /^[가-힣]+학과$/;
     if (department.match(departmentRegExp)) {
       this.setState({
         isDepartmentValid: true,
-        department
+        department,
       });
     } else {
       this.setState({
         isDepartmentValid: false,
-        department
+        department,
       });
     }
   };
@@ -128,19 +142,18 @@ class SignUp extends React.Component {
     if (department) return isDepartmentValid;
   };
 
-
-  validateEmail = email => {
+  validateEmail = (email) => {
     const emailRegExp = /^[\w-]+(\.[\w-]+)*@([a-z0-9-]+(\.[a-z0-9-]+)*?\.[a-z]{2,6}|(\d{1,3}\.){3}\d{1,3})(:\d{4})?$/;
 
     if (email.match(emailRegExp)) {
       this.setState({
         isEmailValid: true,
-        email
+        email,
       });
     } else {
       this.setState({
         isEmailValid: false,
-        email
+        email,
       });
     }
   };
@@ -151,18 +164,18 @@ class SignUp extends React.Component {
     if (email) return isEmailValid;
   };
 
-  validatePhoneNumber = phoneNumberInput => {
+  validatePhoneNumber = (phoneNumberInput) => {
     const phoneNumberRegExp = /^\d{3}-\d{3,4}-\d{4}$/;
 
     if (phoneNumberInput.match(phoneNumberRegExp)) {
       this.setState({
         isPhoneNumberValid: true,
-        phoneNumber: phoneNumberInput
+        phoneNumber: phoneNumberInput,
       });
     } else {
       this.setState({
         isPhoneNumberValid: false,
-        phoneNumber: phoneNumberInput
+        phoneNumber: phoneNumberInput,
       });
     }
   };
@@ -187,12 +200,14 @@ class SignUp extends React.Component {
             <input
               type="email"
               name="email"
-              className={`accounts-input ${this.inputClassNameHelper(this.isEnteredEmailValid())}`}
+              className={`accounts-input ${this.inputClassNameHelper(
+                this.isEnteredEmailValid()
+              )}`}
               placeholder="이메일"
               autoFocus
               required
               autoComplete="off"
-              onChange={e => this.validateEmail(e.target.value)}
+              onChange={(e) => this.validateEmail(e.target.value)}
               value={this.state.email}
             />
           </div>
@@ -205,7 +220,7 @@ class SignUp extends React.Component {
               placeholder="비밀번호"
               required
               autoComplete="off"
-              onChange={e => this.handlePasswordInput(e.target.value)}
+              onChange={(e) => this.handlePasswordInput(e.target.value)}
               value={this.state.password}
             />
           </div>
@@ -218,7 +233,7 @@ class SignUp extends React.Component {
               placeholder="비밀번호 확인"
               required
               autoComplete="off"
-              onChange={e => this.handlePasswordConfirmInput(e.target.value)}
+              onChange={(e) => this.handlePasswordConfirmInput(e.target.value)}
               value={this.state.password_confirmation}
             />
             {this.renderFeedbackMessage()}
@@ -227,11 +242,13 @@ class SignUp extends React.Component {
             <input
               type="text"
               name="name"
-              className={`accounts-input ${this.inputClassNameHelper(this.isEnteredNameValid())}`}
+              className={`accounts-input ${this.inputClassNameHelper(
+                this.isEnteredNameValid()
+              )}`}
               placeholder="이름"
               required
               autoComplete="off"
-              onChange={e => this.validateName(e.target.value)}
+              onChange={(e) => this.validateName(e.target.value)}
               value={this.state.name}
             />
           </div>
@@ -239,11 +256,13 @@ class SignUp extends React.Component {
             <input
               type="text"
               name="department"
-              className={`accounts-input ${this.inputClassNameHelper(this.isEnteredDepartmentValid())}`}
+              className={`accounts-input ${this.inputClassNameHelper(
+                this.isEnteredDepartmentValid()
+              )}`}
               placeholder="중앙멋사학과"
               required
               autoComplete="off"
-              onChange={e => this.validateDepartment(e.target.value)}
+              onChange={(e) => this.validateDepartment(e.target.value)}
               value={this.state.department}
             />
           </div>
@@ -251,11 +270,13 @@ class SignUp extends React.Component {
             <input
               type="tel"
               name="phoneNumber"
-              className={`accounts-input ${this.inputClassNameHelper(this.isEnteredPhoneNumberValid())}`}
+              className={`accounts-input ${this.inputClassNameHelper(
+                this.isEnteredPhoneNumberValid()
+              )}`}
               placeholder="전화번호(010-0000-0000)"
               required
               autoComplete="off"
-              onChange={e => this.validatePhoneNumber(e.target.value)}
+              onChange={(e) => this.validatePhoneNumber(e.target.value)}
               value={this.state.phoneNumber}
             />
           </div>
