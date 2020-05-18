@@ -56,11 +56,7 @@ class SignUp extends React.Component {
     }
 
     return (
-      <button
-        onClick={() => this.signUp(this.state)}
-        className="accounts-invalid-btn"
-        disabled
-      >
+      <button className="accounts-invalid-btn" disabled>
         회원가입
       </button>
     );
