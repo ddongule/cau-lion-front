@@ -1,0 +1,32 @@
+.mypage-container {
+    display: flex;
+    width: 100%;
+    max-width: 65rem;
+    min-height: calc(100vh - 15rem);
+    position: relative;
+    text-align: center;
+    .mypage-sidebar {
+        background-color: grey;
+        display: block;
+        min-height: calc(100vh - 15rem);
+        width: 150px;
+        position: sticky;
+        top: 0;
+        .sidebar-menu {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            height: 100%;
+        }
+    }
+    .mypage-contents {
+        background-color: black;
+        display: block;
+        align-items: center;
+        width: 100%;
+        min-height: calc(100vh - 15rem);
+        justify-content: center;
+        margin: auto;
+        padding: 3.5rem 0 3rem 0;
+    }
+}
