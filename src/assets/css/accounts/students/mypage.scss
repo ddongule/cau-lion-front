@@ -6,7 +6,6 @@
     position: relative;
     text-align: center;
     .mypage-sidebar {
-        background-color: grey;
         display: block;
         min-height: calc(100vh - 15rem);
         width: 150px;
@@ -20,7 +19,6 @@
         }
     }
     .mypage-contents {
-        background-color: black;
         display: block;
         align-items: center;
         width: 100%;
