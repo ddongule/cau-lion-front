@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../../../assets/css/common/nav/side-navbar.scss";
 
 class SideNavItem extends React.Component {
   render() {
