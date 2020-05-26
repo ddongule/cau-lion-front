@@ -4,7 +4,7 @@ class Button extends React.Component {
   render() {
     return (
       <div>
-        <button>버튼입니다.</button>
+        <button>{this.props.value}</button>
       </div>
     );
   }
