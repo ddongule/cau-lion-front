@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import API from "../../api/index";
-import "../../assets/css/accounts/signup.scss";
+import "../../assets/css/accounts/sign-up.scss";
 
 class SignUp extends React.Component {
   constructor(props) {
