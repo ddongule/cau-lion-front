@@ -27,18 +27,12 @@ class SideNavbar extends React.Component {
   }
   render() {
     return (
-      <div className="mypage-container">
-        <div className="mypage-sidebar">
-          <ul className="sidebar-menu">
-            {this.state.sideNavItems.map((sideNavItem, i) => {
-              return <SideNavItem sideNavItem={sideNavItem} key={i} />;
-            })}
-          </ul>
-        </div>
-        <div className="mypage-contents">
-          <div>마이페이지</div>
-          <div>헤헷</div>
-        </div>
+      <div className="mypage-sidebar">
+        <ul className="sidebar-menu">
+          {this.state.sideNavItems.map((sideNavItem, i) => {
+            return <SideNavItem sideNavItem={sideNavItem} key={i} />;
+          })}
+        </ul>
       </div>
     );
   }
