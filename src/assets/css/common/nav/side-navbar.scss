@@ -1,9 +1,19 @@
-.mypage-container {
-    .mypage-sidebar {
-        .sidebar-menu{
-            .side-nav-item {
-                margin-bottom: 20px;
-            }
-        }
+  .mypage-sidebar {
+    display: block;
+    min-height: calc(100vh - 15rem);
+    width: 150px;
+    position: sticky;
+    top: 0;
+    margin: 0 10px 0 30px;
+
+    .sidebar-menu{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      height: 100%;
+
+      .side-nav-item {
+         margin-bottom: 20px;
+      }
     }
-}
+  }
