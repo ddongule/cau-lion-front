@@ -49,7 +49,11 @@ class MyInfo extends React.Component {
               </span>
             </div>
           </div>
-          <Link to="#">정보 수정</Link>
+          <div className="myinfo-edit">
+            <Link to="#" className="btn-edit">
+              정보 수정
+            </Link>
+          </div>
         </div>
       </div>
     );
