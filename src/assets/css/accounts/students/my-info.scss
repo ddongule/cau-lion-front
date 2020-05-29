@@ -1,9 +1,33 @@
-.mypage-myinfo{
+.mypage-myinfo {
+  text-align: left;
+  margin-top: 30px;
+
   .myinfo-title {
-    text-align: left;
     margin: 50px 0 0 30px;
   }
-  .myinfo-contents{
+
+  .myinfo-contents {
     display: flex;
-  }
+
+    .myinfo-contents-detail {
+        display: block;
+        margin: auto 0 auto 30px;
+
+        .myinfo-contents-first {
+        margin: 10px 0 0 0;
+        
+          .myinfo-first-items {
+              margin-right: 5px; 
+          }
+        }
+        
+        .myinfo-contents-second {
+          margin: 10px 0;
+  
+          .myinfo-second-items {
+              display: block;
+          }
+        }
+    }  
+    }
 }
