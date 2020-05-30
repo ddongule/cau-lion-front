@@ -6,7 +6,7 @@ class MainSection extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      imgSrc: "props_img/main-image.jpg",
+      imgSrc: "props_img/main-image.png",
     };
   }
   render() {
