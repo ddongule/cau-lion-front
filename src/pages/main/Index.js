@@ -1,6 +1,6 @@
 import React from "react";
 import NavBar from "../../components/common/nav/Navbar";
-import ImgSection from "../../components/common/ImgSection";
+import MainSection from "../../components/about/MainSection";
 import IntroSection from "../../components/about/IntroSection";
 import ActivitySection from "../../components/about/ActivitySection";
 import RecruitSection from "../../components/about/RecruitSection";
@@ -11,7 +11,7 @@ class Index extends React.Component {
     return (
       <div>
         <NavBar />
-        <ImgSection />
+        <MainSection />
         <IntroSection />
         <ActivitySection />
         <RecruitSection />

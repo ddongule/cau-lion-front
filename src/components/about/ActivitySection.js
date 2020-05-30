@@ -24,12 +24,14 @@ class Activity extends React.Component {
         {
           imgSrc: "props_img/friendship-meeting.jpg",
           category: "친목 모임",
-          content: "멋쟁이 사자처럼 동아리원들과의 친목을 다집니다",
+          content:
+            "기수에 관계없이 멋쟁이 사자처럼 동아리원들과의 친목을 다집니다",
         },
         {
           imgSrc: "props_img/alliance-session.jpg",
           category: "연합 세션 진행",
-          content: "다른 학교와의 연합 세션을 통해 통찰력을 높입니다",
+          content:
+            "다른 학교들과의 다양한 연합 세션들을 통해 아이디어를 나누고, 통찰력을 높입니다",
         },
         {
           imgSrc: "props_img/all-hackathon.jpg",
@@ -40,7 +42,8 @@ class Activity extends React.Component {
         {
           imgSrc: "props_img/cau-membership-trainning.jpg",
           category: "중앙대 멋사 MT",
-          content: "MT를 통해 동아리원들과의 즐거운 추억을 쌓습니다",
+          content:
+            "정기적인 Membership Training을 통해 동아리원들과의 즐거운 추억을 쌓습니다",
         },
       ],
     };

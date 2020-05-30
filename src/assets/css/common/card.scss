@@ -14,13 +14,15 @@
     cursor: pointer;
 
     .card-content {
-        top: 45%;
+        top: 38%;
         position: relative;
         display: flex;
         justify-content: center;
+        font-size: 15px;
     }
     .card-category {
-        top: 95%;
+        top: 105%;
         position: relative;
+        font-size: 15px;
     }
 }
