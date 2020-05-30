@@ -1,12 +1,21 @@
 import React from "react";
 import NavBar from "../../components/common/nav/Navbar";
+import MainSection from "../../components/about/MainSection";
+import IntroSection from "../../components/about/IntroSection";
+import ActivitySection from "../../components/about/ActivitySection";
+import RecruitSection from "../../components/about/RecruitSection";
+import Footer from "../../components/common/Footer";
 
 class Index extends React.Component {
   render() {
     return (
       <div>
         <NavBar />
-        <h1>index입니다.</h1>
+        <MainSection />
+        <IntroSection />
+        <ActivitySection />
+        <RecruitSection />
+        <Footer />
       </div>
     );
   }

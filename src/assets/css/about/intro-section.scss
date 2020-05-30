@@ -1,0 +1,22 @@
+.intro-section {
+  border-top: solid 0.1px;
+  padding: 30px 100px 70px 100px;
+
+  .intro-section-cards {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 70px 0;
+
+    .card {
+      background-color: rgb(24, 23, 23);
+
+      .card-category {
+        font-size: 18px;
+      }
+
+      .card-content {
+        color: white;
+      }
+    }
+  }
+}
