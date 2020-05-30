@@ -41,4 +41,4 @@ We follow commit message rules like below for seamless project management.
 
 ## License
 MIT License
-Copyright (c) 2020 Caulion8
+Copyright (c) 2020 CAU-LION 8th Admin
