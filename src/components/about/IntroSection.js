@@ -12,15 +12,15 @@ class IntroSection extends React.Component {
       cards: [
         {
           category: "Vision",
-          content: "동아리 비전",
+          content: "비전공자도 서비스를 직접 개발한다",
         },
         {
           category: "Activity",
-          content: "동아리 활동",
+          content: "체계적인 웹 개발 세션 및 해커톤",
         },
         {
           category: "Achievement",
-          content: "동아리 목표",
+          content: "나만의 아이디어를 직접 실현한다",
         },
       ],
     };
