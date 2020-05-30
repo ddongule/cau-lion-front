@@ -8,7 +8,7 @@ class RecruitSection extends React.Component {
     this.state = {
       title: "Recruit CAU-LION",
       subtitles: ["중앙대학교 멋쟁이사자처럼은 언제 모집하나요?"],
-      imgSrc: "props_img/temp-recruit.jpg",
+      imgSrc: "props_img/recruit.png",
     };
   }
 
