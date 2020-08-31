@@ -35,7 +35,7 @@ class NavBar extends React.Component {
         <div className="main-nav-logo">
           {/* temporary logo */}
           <Link to="/">
-            <img src={lion} className="logo" />
+            <img src={lion} className="logo" alt="" />
           </Link>
         </div>
         <div className="main-nav-list">

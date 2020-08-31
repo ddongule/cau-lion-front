@@ -26,9 +26,9 @@ class Footer extends React.Component {
     return (
       <div className="footer">
         <div className="footer-icons">
-          {this.state.icons.map((icon) => (
-            <a href={icon.url}>
-              <img className="footer-icon" src={icon.imgPath} />
+          {this.state.icons.map((icon, i) => (
+            <a href={icon.url} key={i}>
+              <img className="footer-icon" src={icon.imgPath} alt="" />
             </a>
           ))}
         </div>

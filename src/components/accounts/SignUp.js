@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import API from "../../api/index";
 import "../../assets/css/accounts/signup.scss";
-import { findAllInRenderedTree } from "react-dom/test-utils";
 
 class SignUp extends React.Component {
   constructor(props) {
