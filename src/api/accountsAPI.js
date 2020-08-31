@@ -1,16 +1,16 @@
 import axios from "axios";
 
 const config = {
-  baseUrl: "http://caulion-env.eba-vw5ggty2.us-west-2.elasticbeanstalk.com/",
+  baseUrl: "http://localhost:12345/",
 };
 
 export default () => {
   return {
     signUp: (userInfo) => {
-      return axios.post(`${config.baseUrl}login_api/auth/register/`, userInfo);
+      return axios.post(`${config.baseUrl}auth/signup/`, userInfo);
     },
-    login: (userInfo) => {
-      return axios.post(`${config.baseUrl}login_api/auth/login/`, userInfo);
+    login: (loginInfo) => {
+      return axios.post(`${config.baseUrl}auth/login`, loginInfo);
     },
   };
 };
