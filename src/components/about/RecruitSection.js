@@ -1,5 +1,5 @@
 import React from "react";
-import ImageSection from "../common/ImgSection";
+import ImgSection from "../common/ImgSection";
 import SectionHeader from "../common/section/SectionHeader";
 
 class RecruitSection extends React.Component {
@@ -19,7 +19,7 @@ class RecruitSection extends React.Component {
           title={this.state.title}
           subtitles={this.state.subtitles}
         />
-        <ImageSection imgSrc={this.state.imgSrc} key={this.state.i} />
+        <ImgSection imgSrc={this.state.imgSrc} key={this.state.i} />
       </div>
     );
   }
