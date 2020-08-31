@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import API from "../../api/index";
 import "../../assets/css/accounts/signup.scss";
+import { findAllInRenderedTree } from "react-dom/test-utils";
 
 class SignUp extends React.Component {
   constructor(props) {
@@ -13,8 +14,8 @@ class SignUp extends React.Component {
       confirmPassword: "",
       name: "",
       isNameValid: false,
-      department: "",
-      isDepartmentValid: false,
+      major: "",
+      isMajorValid: false,
       phoneNumber: "",
       isPhoneNumberValid: false,
     };
@@ -35,18 +36,17 @@ class SignUp extends React.Component {
     const {
       isEmailValid,
       isNameValid,
-      isDepartmentValid,
+      isMajorValid,
       isPhoneNumberValid,
     } = this.state;
-    return (
-      isEmailValid && isNameValid && isDepartmentValid && isPhoneNumberValid
-    );
+    return isEmailValid && isNameValid && isMajorValid && isPhoneNumberValid;
   };
 
   renderSubmitBtn = () => {
     if (this.isEveryFieldValid()) {
       return (
         <button
+          type="button"
           onClick={() => this.signUp(this.state)}
           className="accounts-btn"
         >
@@ -118,24 +118,24 @@ class SignUp extends React.Component {
     if (name) return isNameValid;
   };
 
-  validateDepartment = (department) => {
-    const departmentRegExp = /^[가-힣]+학과$/;
-    if (department.match(departmentRegExp)) {
+  validateMajor = (major) => {
+    const majorRegExp = /^[가-힣]+학과$/;
+    if (major.match(majorRegExp)) {
       this.setState({
-        isDepartmentValid: true,
-        department,
+        isMajorValid: true,
+        major,
       });
     } else {
       this.setState({
-        isDepartmentValid: false,
-        department,
+        isMajorValid: false,
+        major,
       });
     }
   };
 
-  isEnteredDepartmentValid = () => {
-    const { department, isDepartmentValid } = this.state;
-    if (department) return isDepartmentValid;
+  isEnteredMajorValid = () => {
+    const { major, isMajorValid } = this.state;
+    if (major) return isMajorValid;
   };
 
   validateEmail = (email) => {
@@ -202,7 +202,13 @@ class SignUp extends React.Component {
 
   async signUp(userInfo) {
     const response = await API().signUp(userInfo);
-    console.log(response);
+    if (response.data.data == -1) {
+      alert("회원가입 중 오류가 발생했습니다.");
+    } else if (response.data.data == 0) {
+      alert("중복된 아이디가 존재합니다.");
+    } else {
+      alert("회원가입이 완료되었습니다.");
+    }
   }
 
   render() {
@@ -269,15 +275,15 @@ class SignUp extends React.Component {
           <div className="accounts-input-section">
             <input
               type="text"
-              name="department"
+              name="major"
               className={`accounts-input ${this.inputClassNameHelper(
-                this.isEnteredDepartmentValid()
+                this.isEnteredMajorValid()
               )}`}
               placeholder="중앙멋사학과"
               required
               autoComplete="off"
-              onChange={(e) => this.validateDepartment(e.target.value)}
-              value={this.state.department}
+              onChange={(e) => this.validateMajor(e.target.value)}
+              value={this.state.major}
             />
           </div>
           <div className="accounts-input-section">
