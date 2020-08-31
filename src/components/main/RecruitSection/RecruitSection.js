@@ -1,6 +1,6 @@
 import React from "react";
-import ImgSection from "../common/ImgSection";
-import SectionHeader from "../common/section/SectionHeader";
+import ImgSection from "../../common/basic/ImgSection";
+import SectionHeader from "../../common/section/SectionHeader";
 
 class RecruitSection extends React.Component {
   constructor(props) {

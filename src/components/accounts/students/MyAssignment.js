@@ -1,6 +1,6 @@
 import React from "react";
-import Card from "../common/Card";
-import "../../assets/css/accounts/students/my-assignment.scss";
+import Card from "../../common/basic/Card";
+import "./my-assignment.scss";
 
 class MyAssignment extends React.Component {
   constructor(props) {

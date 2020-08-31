@@ -1,7 +1,7 @@
 import React from "react";
-import SectionHeader from "../common/section/SectionHeader";
-import Card from "../common/Card";
-import "../../assets/css/about/activity-section.scss";
+import SectionHeader from "../../common/section/SectionHeader";
+import Card from "../../common/basic/Card";
+import "./activity-section.scss";
 
 class Activity extends React.Component {
   constructor(props) {

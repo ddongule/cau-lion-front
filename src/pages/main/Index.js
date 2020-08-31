@@ -1,9 +1,9 @@
 import React from "react";
 import Layout from "../../components/common/layout/Layout";
-import MainSection from "../../components/about/MainSection";
-import IntroSection from "../../components/about/IntroSection";
-import ActivitySection from "../../components/about/ActivitySection";
-import RecruitSection from "../../components/about/RecruitSection";
+import MainSection from "../../components/main/MainSection/MainSection";
+import AboutSection from "../../components/main/AboutSection/AboutSection";
+import ActivitySection from "../../components/main/ActivitySection/ActivitySection";
+import RecruitSection from "../../components/main/RecruitSection/RecruitSection";
 
 class Index extends React.Component {
   render() {
@@ -11,7 +11,7 @@ class Index extends React.Component {
       <div>
         <Layout>
           <MainSection />
-          <IntroSection />
+          <AboutSection />
           <ActivitySection />
           <RecruitSection />
         </Layout>

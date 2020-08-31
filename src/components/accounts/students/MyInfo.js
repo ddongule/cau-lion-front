@@ -1,7 +1,7 @@
 import React from "react";
-import Card from "../common/Card";
+import Card from "../../common/basic/Card";
 import { Link } from "react-router-dom";
-import "../../assets/css/accounts/students/my-info.scss";
+import "./my-info.scss";
 
 class MyInfo extends React.Component {
   constructor(props) {

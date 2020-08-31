@@ -6,7 +6,7 @@ const config = {
 
 export default () => {
   return {
-    signUp: (userInfo) => {
+    signup: (userInfo) => {
       return axios.post(`${config.baseUrl}auth/signup/`, userInfo);
     },
     login: (loginInfo) => {

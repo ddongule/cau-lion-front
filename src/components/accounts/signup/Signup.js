@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import API from "../../api/index";
-import "../../assets/css/accounts/signup.scss";
+import API from "../../../api/index";
+import "./signup.scss";
 
-class SignUp extends React.Component {
+class Signup extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -46,7 +46,7 @@ class SignUp extends React.Component {
       return (
         <button
           type="button"
-          onClick={() => this.signUp(this.state)}
+          onClick={() => this.signup(this.state)}
           className="accounts-btn"
         >
           회원가입
@@ -199,11 +199,11 @@ class SignUp extends React.Component {
     if (phoneNumber) return isPhoneNumberValid;
   };
 
-  async signUp(userInfo) {
-    const response = await API().signUp(userInfo);
-    if (response.data.data == -1) {
+  async signup(userInfo) {
+    const response = await API().signup(userInfo);
+    if (response.data.data === -1) {
       alert("회원가입 중 오류가 발생했습니다.");
-    } else if (response.data.data == 0) {
+    } else if (response.data.data === 0) {
       alert("중복된 아이디가 존재합니다.");
     } else {
       alert("회원가입이 완료되었습니다.");
@@ -312,4 +312,4 @@ class SignUp extends React.Component {
   }
 }
 
-export default SignUp;
+export default Signup;

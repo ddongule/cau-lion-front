@@ -1,7 +1,7 @@
 import React from "react";
-import "../../assets/css/common/footer.scss";
-import githubIcon from "../../assets/img/github.png";
-import facebookIcon from "../../assets/img/facebook.png";
+import "./footer.scss";
+import githubIcon from "../../../assets/img/github.png";
+import facebookIcon from "../../../assets/img/facebook.png";
 
 class Footer extends React.Component {
   constructor(props) {

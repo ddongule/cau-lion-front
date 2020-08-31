@@ -1,5 +1,5 @@
 import React from "react";
-import "../../assets/css/common/img-section.scss";
+import "./img-section.scss";
 
 class ImgSection extends React.Component {
   render() {

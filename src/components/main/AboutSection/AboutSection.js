@@ -1,9 +1,9 @@
 import React from "react";
-import SectionHeader from "../common/section/SectionHeader";
-import Card from "../common/Card";
-import "../../assets/css/about/intro-section.scss";
+import SectionHeader from "../../common/section/SectionHeader";
+import Card from "../../common/basic/Card";
+import "./about-section.scss";
 
-class IntroSection extends React.Component {
+class AboutSection extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -28,12 +28,12 @@ class IntroSection extends React.Component {
 
   render() {
     return (
-      <div className="intro-section">
+      <div className="about-section">
         <SectionHeader
           title={this.state.title}
           subtitles={this.state.subtitles}
         />
-        <div className="intro-section-cards">
+        <div className="about-section-cards">
           {this.state.cards.map((card, i) => {
             return <Card card={card} key={i} />;
           })}
@@ -43,4 +43,4 @@ class IntroSection extends React.Component {
   }
 }
 
-export default IntroSection;
+export default AboutSection;

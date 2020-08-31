@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../common/Button";
+import Button from "../../common/basic/Button";
 
 class MyBoard extends React.Component {
   constructor(props) {

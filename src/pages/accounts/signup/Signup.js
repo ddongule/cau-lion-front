@@ -1,13 +1,13 @@
 import React from "react";
-import Layout from "../../components/common/layout/Layout";
-import Login from "../../components/accounts/Login";
+import Layout from "../../../components/common/layout/Layout";
+import Signup from "../../../components/accounts/signup/Signup";
 
 class Accounts extends React.Component {
   render() {
     return (
       <div>
         <Layout>
-          <Login />
+          <Signup />
         </Layout>
       </div>
     );

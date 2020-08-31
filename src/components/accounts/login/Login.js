@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import API from "../../api/accountsAPI";
-import "../../assets/css/accounts/signup.scss";
+import API from "../../../api/accountsAPI";
+import "../signup/signup.scss";
 
 class Login extends React.Component {
   constructor(props) {
