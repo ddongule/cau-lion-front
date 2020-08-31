@@ -25,6 +25,7 @@ class SideNavbar extends React.Component {
       ],
     };
   }
+
   render() {
     return (
       <div className="mypage-sidebar">

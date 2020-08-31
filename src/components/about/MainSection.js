@@ -1,6 +1,6 @@
 import React from "react";
 import ImgSection from "../common/ImgSection";
-import "../../assets/css/common/img-section.scss";
+import "../../assets/css/about/main-section.scss";
 
 class MainSection extends React.Component {
   constructor(props) {

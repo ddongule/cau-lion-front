@@ -10,31 +10,32 @@
     display: flex;
 
     .myinfo-contents-detail {
-        display: block;
-        margin: auto 0 auto 30px;
-        width: 100%;
+      display: block;
+      margin: auto 0 auto 30px;
+      width: 100%;
 
-        .myinfo-contents-first {
+      .myinfo-contents-first {
         margin: 10px 0 0 0;
-        
-          .myinfo-first-items {
-              margin-right: 5px; 
-          }
+
+        .myinfo-first-items {
+          margin-right: 5px;
         }
-        
-        .myinfo-contents-second {
-          margin: 10px 0;
-  
-          .myinfo-second-items {
-              display: block;
-          }
+      }
+
+      .myinfo-contents-second {
+        margin: 10px 0;
+
+        .myinfo-second-items {
+          display: block;
         }
-    }  
+      }
+    }
+
     .myinfo-edit {
       margin: auto 0;
       text-align: right;
       width: 100%;
-      
+
       .btn-edit {
         background-color: #707070;
         color: white;

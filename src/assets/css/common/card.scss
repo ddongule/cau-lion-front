@@ -1,28 +1,28 @@
 .card {
-    border-radius: 50%;
-    border: 1px solid #e4e4e4;
-    margin: 30px 20px;
-    text-align: center;
-    position: relative;
-    left: 0;
-    right: 0;
-    top: 50%;
-    width: 240px;
-    min-width: 240px;
-    height: 240px;
-    transition: all .5s;
-    cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid #e4e4e4;
+  margin: 30px 20px;
+  text-align: center;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 50%;
+  width: 240px;
+  min-width: 240px;
+  height: 240px;
+  transition: all 0.5s;
+  cursor: pointer;
 
-    .card-content {
-        top: 38%;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        font-size: 15px;
-    }
-    .card-category {
-        top: 105%;
-        position: relative;
-        font-size: 15px;
-    }
+  .card-content {
+    top: 38%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+  }
+  .card-category {
+    top: 105%;
+    position: relative;
+    font-size: 15px;
+  }
 }

@@ -22,6 +22,7 @@ class MyInfo extends React.Component {
       ],
     };
   }
+
   render() {
     return (
       <div className="mypage-myinfo">
@@ -59,4 +60,5 @@ class MyInfo extends React.Component {
     );
   }
 }
+
 export default MyInfo;
