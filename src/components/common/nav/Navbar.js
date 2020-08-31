@@ -3,6 +3,7 @@ import NavItem from "./NavItem";
 import "../../../assets/css/common/base/base.scss";
 import "../../../assets/css/common/nav/navbar.scss";
 import lion from "../../../assets/img/lion.png";
+import { Link } from "react-router-dom";
 
 class NavBar extends React.Component {
   constructor(props) {
@@ -23,7 +24,7 @@ class NavBar extends React.Component {
         },
         {
           item: "로그인",
-          link: "#",
+          link: "/login",
         },
       ],
     };
@@ -33,9 +34,9 @@ class NavBar extends React.Component {
       <div className="main-nav">
         <div className="main-nav-logo">
           {/* temporary logo */}
-          <a href="#">
-            <img src={lion} className="logo" />
-          </a>
+          <Link to="/">
+            <img src={lion} className="logo" alt="" />
+          </Link>
         </div>
         <div className="main-nav-list">
           <ul className="main-nav-box">

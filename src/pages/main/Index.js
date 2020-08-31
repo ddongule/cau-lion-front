@@ -1,21 +1,22 @@
 import React from "react";
-import NavBar from "../../components/common/nav/Navbar";
-import MainSection from "../../components/about/MainSection";
+import Layout from "../../components/common/layout/Layout";
+import ImgSection from "../../components/common/ImgSection";
 import IntroSection from "../../components/about/IntroSection";
 import ActivitySection from "../../components/about/ActivitySection";
 import RecruitSection from "../../components/about/RecruitSection";
-import Footer from "../../components/common/Footer";
+import MainSection from "../../components/about/MainSection";
 
 class Index extends React.Component {
   render() {
     return (
       <div>
-        <NavBar />
-        <MainSection />
-        <IntroSection />
-        <ActivitySection />
-        <RecruitSection />
-        <Footer />
+        <Layout>
+          <MainSection />
+          <ImgSection />
+          <IntroSection />
+          <ActivitySection />
+          <RecruitSection />
+        </Layout>
       </div>
     );
   }
