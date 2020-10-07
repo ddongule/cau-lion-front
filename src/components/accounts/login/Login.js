@@ -13,7 +13,7 @@ class Login extends React.Component {
     const response = await API().login(loginInfo);
     console.log(response);
     if (response.data.httpStatus === "OK") {
-      alert("로그인 성공", response.data);
+      alert("로그인을 성공했습니다.", response.data);
     } else if (response.data.httpStatus === "BAD_REQUEST") {
       alert("아이디와 비밀번호가 올바르지 않습니다.");
     } else if (response.data.httpStatus === "UNAUTHORIZED") {
@@ -21,18 +21,18 @@ class Login extends React.Component {
     }
   }
 
-  validateEmail = (email) => {
+  validateEmail = email => {
     const emailRegExp = /^[\w-]+(\.[\w-]+)*@([a-z0-9-]+(\.[a-z0-9-]+)*?\.[a-z]{2,6}|(\d{1,3}\.){3}\d{1,3})(:\d{4})?$/;
 
     if (email.match(emailRegExp)) {
       this.setState({
         isEmailValid: true,
-        email,
+        email
       });
     } else {
       this.setState({
         isEmailValid: false,
-        email,
+        email
       });
     }
   };
@@ -44,11 +44,7 @@ class Login extends React.Component {
   renderSubmitBtn = () => {
     if (this.state.isEmailValid) {
       return (
-        <button
-          type="button"
-          onClick={() => this.login(this.state)}
-          className="accounts-btn"
-        >
+        <button type="button" onClick={() => this.login(this.state)} className="accounts-btn">
           로그인
         </button>
       );
@@ -73,7 +69,7 @@ class Login extends React.Component {
               placeholder="이메일"
               autoFocus
               required
-              onChange={(e) => this.validateEmail(e.target.value)}
+              onChange={e => this.validateEmail(e.target.value)}
             />
           </div>
           <div className="accounts-input-section">
@@ -82,7 +78,7 @@ class Login extends React.Component {
               className="accounts-input"
               placeholder="비밀번호"
               required
-              onChange={(e) => this.handlePasswordInput(e.target.value)}
+              onChange={e => this.handlePasswordInput(e.target.value)}
             />
           </div>
           <div className="accounts-remember-pw">
