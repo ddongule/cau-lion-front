@@ -13,7 +13,7 @@ class Accounts extends React.Component {
         <div className="mypage-container">
           <SideNavbar />
           <div className="mypage-contents">
-            <div className="mypage-title">마이페이지</div>
+            <div className="mypage-title">마이페이지 입니다.</div>
             <MyInfo />
             <MyAssignment />
             <MyBoard />
